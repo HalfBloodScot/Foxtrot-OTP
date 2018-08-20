@@ -11,7 +11,7 @@ It is therefore not advisable to implement Foxtrot on a shared computer with the
 ## Description:
 
 The Foxtrot engine provides a Windows-specific key generation and encryption/decryption utility using the one-time-pad method.
-The engine itself is comprised of a single class (`Foxtrot`) containing all methods associated with the engine.
+The engine itself is comprised of a single class `Foxtrot` containing all methods associated with the engine.
 
 ### Key Generation
 
