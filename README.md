@@ -27,7 +27,7 @@ int main() {
     Foxtrot foxtrot;                                                    //Create an instance of the engine.
 
     NString key = foxtrot.generateKey(1000);                            //Generate a key 1000 characters long.
-    std::cout << "Key: " foxtrot.toString(key) << "\n";                 //Print our key.
+    std::cout << "Key: " << foxtrot.toString(key) << "\n";              //Print our key.
 
     std::string cipherText = foxtrot.encrypt("Hello World!", key);      //Encrypt "Hello World!" using our key.
     std::cout << "Cipher text: " << cipherText << "\n";                 //Print our cipher text.
