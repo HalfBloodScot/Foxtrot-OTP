@@ -15,7 +15,7 @@ The engine itself is comprised of a single class `Foxtrot` containing all method
 Foxtrot uses Windows' `CryptGenRandom()` to generate random pads for use as keys.
 
 ## Installation:
-Since Foxtrot is only a single header/source class, you can simply add `Foxtrot.h` and `Foxtrot.cpp` to your project directory and `#include Foxtrot.h` in your implementation file.
+Since Foxtrot is only a single header/source class, you can simply add `Foxtrot.h` and `Foxtrot.cpp` to your project directory and `#include "Foxtrot.h"` in your implementation file.
 
 ## Usage Example:
 Here's an example of how to use Foxtrot to generate a key, encrypt a message with it, then decrypt the same message:
