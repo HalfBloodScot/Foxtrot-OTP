@@ -24,16 +24,16 @@ Here's an example of how to use Foxtrot to generate a key, encrypt a message wit
 #include "Foxtrot.h"    //Foxtrot engine
 
 int main() {
-    Foxtrot foxtrot;
+    Foxtrot foxtrot;                                                    //Create an instance of the engine.
 
-    NString key = foxtrot.generateKey(1000); //Generate a key 1000 characters long.
-    std::cout << "Key: " foxtrot.toString(key) << "\n"; //Print our key.
+    NString key = foxtrot.generateKey(1000);                            //Generate a key 1000 characters long.
+    std::cout << "Key: " foxtrot.toString(key) << "\n";                 //Print our key.
 
-    std::string cipherText = foxtrot.encrypt("Hello World!", key); //Encrypt "Hello World!" using our key.
-    std::cout << "Cipher text: " << cipherText << "\n"; //Print out cipher text.
+    std::string cipherText = foxtrot.encrypt("Hello World!", key);      //Encrypt "Hello World!" using our key.
+    std::cout << "Cipher text: " << cipherText << "\n";                 //Print our cipher text.
 
-    std::string plainText = foxtrot.decrypt(cipherText, key); //Decrypt the cipher text using our key.
-    std::cout << "Plain text: " << plainText << "\n"; //Prints "Hello World!".
+    std::string plainText = foxtrot.decrypt(cipherText, key);           //Decrypt the cipher text using our key.
+    std::cout << "Plain text: " << plainText << "\n";                   //Prints "Hello World!".
 
     return 0;
 }
